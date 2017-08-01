@@ -1,13 +1,15 @@
 {
   "name": "redux-offline-chain",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "chain as many offline actions as you like",
   "main": "src/index.js",
   "repository": "https://github.com/birgernass/redux-offline-chain",
   "author": "Birger Naß <birgernass@posteo.net>",
   "license": "MIT",
   "keywords": [
+    "chain",
     "middleware",
+    "offline",
     "react",
     "react-native",
     "redux",
