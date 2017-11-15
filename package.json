@@ -1,9 +1,8 @@
 {
   "name": "redux-offline-chain",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "chain as many offline actions as you like",
   "main": "lib/index.js",
-  "jsnext:main": "es/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/birgernass/redux-offline-chain"
