@@ -1,9 +1,16 @@
 # redux-offline-chain
 
-A [redux-middleware](http://redux.js.org/docs/advanced/Middleware.html) for [redux-offline](https://github.com/jevakallio/redux-offline), inspired by [redux-thunk](https://github.com/gaearon/redux-thunk).
+A [redux-middleware](http://redux.js.org/docs/advanced/Middleware.html) for
+[redux-offline](https://github.com/jevakallio/redux-offline), inspired by
+[redux-thunk](https://github.com/gaearon/redux-thunk).
 
-redux-offline-chain allows you to chain offline actions.
-It looks for action.meta.then functions and invokes them in a redux-thunk like manner. The then callback gets the payload from the effect reconciler and optionally redux's dispatch and getState functions.
+redux-offline-chain allows you to chain offline actions. It looks for
+action.meta.then functions and invokes them in a redux-thunk like manner. The
+then callback gets the payload from the effect reconciler and optionally redux's
+dispatch and getState functions.
+
+**Caveat: Please note that the functions cannot be persisted and therefore only
+work within the same session.**
 
 ## Installation
 
@@ -17,7 +24,10 @@ import { offline } from 'redux-offline'
 import offlineConfig from 'redux-offline/lib/defaults'
 import offlineChain from 'redux-offline-chain'
 
-const store = offline(offlineConfig)(createStore)(rootReducer, compose(applyMiddleware(offlineChain)))
+const store = offline(offlineConfig)(createStore)(
+  rootReducer,
+  compose(applyMiddleware(offlineChain))
+)
 ```
 
 ## Usage

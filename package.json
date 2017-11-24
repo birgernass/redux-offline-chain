@@ -1,6 +1,6 @@
 {
   "name": "redux-offline-chain",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "chain as many offline actions as you like",
   "main": "lib/index.js",
   "repository": {
